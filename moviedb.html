@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MovieDB API</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<h1>Arturo's Moviedb</h1>
+			</div>
+		</div>
+		<div class="row">
+			<form class="col-12" id="search-form">
+				<div class="form-row">
+					<div class="col-6 mt-4 col-sm-6 col-lg-6">
+						<label for="search-id" class="sr-only">Search:</label>
+						<input type="text" class="form-control" id="search-id" placeholder="Search...">
+					</div>
+					<div class="col-2 mt-4 col-sm-auto">
+						<button type="submit" class="btn btn-primary btn-block">Search</button>
+					</div>
+				</div> 
+			</form>
+		</div>
+		<div class="row"> 
+			<div class="col-12 mt-4">
+				Showing <span id="found-results" class="font-weight-bold"></span> of
+				<span id="total-results" class="font-weight-bold"></span> result(s)
+			</div>
+		</div>
+		<div> 
+			<div class="row"  id="parentBody">
+			</div>
+		</div>
+	</div>
+<script src="main.js"></script>
+</body>
+</html>
